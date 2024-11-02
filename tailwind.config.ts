@@ -10,6 +10,7 @@ const config = {
 	prefix: '',
 	theme: {
 		container: {
+			// @ts-ignore this is messed up by magicui automatically every time
 			center: 'true',
 			padding: '2rem',
 			screens: {
