@@ -32,7 +32,7 @@ export default function VideoCard(props: { video: Video }) {
 					</div>
 				)}
 			</div>
-			<div className={'flex gap-3'}>
+			<div className={'flex items-start gap-3'}>
 				<Image
 					src={'/img/avatars/ashton.webp'}
 					alt={''}
