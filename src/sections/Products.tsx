@@ -1,5 +1,5 @@
 import ProductCard from '@/components/Cards/ProductCard';
-import { SectionSubtitle, SectionTitle } from '@/components/UI/Typography/SectionTitle';
+import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/SectionTitle';
 import products from '@/config/products';
 const cutouts = [
 	{

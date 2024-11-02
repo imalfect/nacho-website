@@ -1,5 +1,5 @@
 import ExchangeCard from '@/components/Cards/ExchangeCard';
-import { SectionSubtitle, SectionTitle } from '@/components/UI/Typography/SectionTitle';
+import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/SectionTitle';
 import exchanges from '@/config/exchanges';
 import { Ticker } from '@/types/tokenTickers';
 

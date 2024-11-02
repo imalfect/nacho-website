@@ -1,4 +1,4 @@
-import NumberTicker from '@/components/UI/number-ticker';
+import NumberTicker from '@/components/ui/number-ticker';
 import clsx from 'clsx';
 import { cloneElement, ReactElement, ReactNode } from 'react';
 

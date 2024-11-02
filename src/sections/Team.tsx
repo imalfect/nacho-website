@@ -1,7 +1,7 @@
 import ContributorCard from '@/components/Cards/ContributorCard';
 import { CreatorCard } from '@/components/Cards/CreatorCard';
-import Marquee from '@/components/UI/marquee';
-import { SectionSubtitle, SectionTitle } from '@/components/UI/Typography/SectionTitle';
+import Marquee from '@/components/ui/marquee';
+import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/SectionTitle';
 import contributors from '@/config/contributors';
 import { motion, stagger, useAnimate, useAnimationControls } from 'framer-motion';
 

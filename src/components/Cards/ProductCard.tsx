@@ -1,5 +1,5 @@
-import { SocialButton } from '@/components/UI/Buttons/SocialButton';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/UI/carousel';
+import { SocialButton } from '@/components/ui/Buttons/SocialButton';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Product } from '@/config/products';
 import CSS from 'csstype';
 import Autoplay from 'embla-carousel-autoplay';

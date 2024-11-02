@@ -1,4 +1,4 @@
-import { MediumButton } from '@/components/UI/Buttons/MediumButton';
+import { MediumButton } from '@/components/ui/Buttons/MediumButton';
 import { Exchange } from '@/config/exchanges';
 import NumberFlow from '@number-flow/react';
 import { motion } from 'framer-motion';

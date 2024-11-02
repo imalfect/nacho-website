@@ -1,4 +1,4 @@
-import { SocialButton } from '@/components/UI/Buttons/SocialButton';
+import { SocialButton } from '@/components/ui/Buttons/SocialButton';
 import { Social } from '@/types/social';
 import { motion } from 'framer-motion';
 import Image from 'next/image';

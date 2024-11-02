@@ -1,6 +1,6 @@
 import VideoCard from '@/components/Cards/VideoCard';
-import Marquee from '@/components/UI/marquee';
-import { SectionSubtitle, SectionTitle } from '@/components/UI/Typography/SectionTitle';
+import Marquee from '@/components/ui/marquee';
+import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/SectionTitle';
 import videos from '@/config/videos';
 import { useIsClient, useMediaQuery } from 'usehooks-ts';
 export default function VideosSection() {

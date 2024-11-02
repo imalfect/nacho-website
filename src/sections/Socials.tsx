@@ -1,6 +1,6 @@
 import NachoNationOrbit from '@/components/SocialsOrbit/NachoNationOrbit';
-import { SectionSubtitle, SectionTitle } from '@/components/UI/Typography/SectionTitle';
-import IconCloud from '@/components/UI/icon-cloud';
+import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/SectionTitle';
+import IconCloud from '@/components/ui/icon-cloud';
 import socials from '@/config/socials';
 import { useIsClient, useMediaQuery } from 'usehooks-ts';
 

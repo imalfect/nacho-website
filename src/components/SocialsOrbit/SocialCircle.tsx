@@ -1,4 +1,4 @@
-import OrbitingCircles from '@/components/UI/orbiting-circles';
+import OrbitingCircles from '@/components/ui/orbiting-circles';
 import Image from 'next/image';
 import Link from 'next/link';
 

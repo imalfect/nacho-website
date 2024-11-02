@@ -1,7 +1,7 @@
 'use client';
-import { PartButton } from '@/components/UI/Buttons/PartButton';
-import { SectionSubtitle } from '@/components/UI/Typography/SectionTitle';
-import WordPullUp from '@/components/UI/word-pull-up';
+import { PartButton } from '@/components/ui/Buttons/PartButton';
+import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
+import WordPullUp from '@/components/ui/word-pull-up';
 import RoadmapPart from '@/parts/Roadmap';
 import TokenomicsPart from '@/parts/Tokenomics';
 import VisionPart from '@/parts/Vision';

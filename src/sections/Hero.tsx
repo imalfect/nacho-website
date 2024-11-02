@@ -1,8 +1,8 @@
 import { FallingCoin } from '@/components/FallingCoin';
-import { PartButton } from '@/components/UI/Buttons/PartButton';
-import LetterPullup from '@/components/UI/letter-pullup';
-import Particles from '@/components/UI/particles';
-import { SectionSubtitle } from '@/components/UI/Typography/SectionTitle';
+import { PartButton } from '@/components/ui/Buttons/PartButton';
+import LetterPullup from '@/components/ui/letter-pullup';
+import Particles from '@/components/ui/particles';
+import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
 import { LucideScroll } from 'lucide-react';
 import Link from 'next/link';
