@@ -3,13 +3,13 @@ import { SectionSubtitle, SectionTitle } from '@/components/ui/Typography/Sectio
 import products from '@/config/products';
 const cutouts = [
 	{
-		clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);'
+		clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%)'
 	},
 	{
-		clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 90%);'
+		clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 89%)'
 	},
 	{
-		clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 85%);'
+		clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 90%)'
 	}
 ];
 export default function ProductsSection() {
