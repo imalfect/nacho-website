@@ -1,8 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 interface LetterPullupProps {
 	className?: string;
@@ -14,43 +13,56 @@ interface LetterPullupProps {
 export default function LetterPullup({
 	className,
 	words,
-	delay,
+	delay = 0.05,
 	onAnimationComplete
 }: LetterPullupProps) {
-	const letters = words.split('');
+	// Split into words first, then letters while preserving word grouping
+	const wordArray = words.split(' ');
+	let totalLetterCount = 0;
 
 	const pullupVariant = {
 		initial: { y: 100, opacity: 0 },
-		animate: (i: any) => ({
+		animate: (i: number) => ({
 			y: 0,
 			opacity: 1,
 			transition: {
-				delay: i * (delay ? delay : 0.05) // By default, delay each letter's animation by 0.05 seconds
+				delay: i * delay
 			}
 		})
 	};
 
 	return (
-		<div className="mb-[0.67em] flex">
-			{letters.map((letter, i) => (
-				<motion.h1
-					onAnimationComplete={() => {
-						if (i === letters.length - 1 && onAnimationComplete) {
-							onAnimationComplete();
-						}
-					}}
-					key={i}
-					variants={pullupVariant}
-					initial="initial"
-					animate="animate"
-					custom={i}
-					className={cn(
-						'text-center font-display font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:leading-[5rem]',
-						className
-					)}
-				>
-					{letter === ' ' ? <span>&nbsp;</span> : letter}
-				</motion.h1>
+		<div className="mb-[0.67em] flex flex-wrap gap-x-[1em]">
+			{wordArray.map((word, wordIndex) => (
+				<div key={wordIndex} className="flex">
+					{word.split('').map((letter, letterIndex) => {
+						totalLetterCount++;
+						return (
+							<motion.h1
+								key={`${wordIndex}-${letterIndex}`}
+								variants={pullupVariant}
+								initial="initial"
+								animate="animate"
+								custom={totalLetterCount - 1}
+								onAnimationComplete={() => {
+									if (
+										wordIndex === wordArray.length - 1 &&
+										letterIndex === word.length - 1 &&
+										onAnimationComplete
+									) {
+										onAnimationComplete();
+									}
+								}}
+								className={cn(
+									'text-center font-display font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:leading-[5rem]',
+									className
+								)}
+							>
+								{letter}
+							</motion.h1>
+						);
+					})}{' '}
+				</div>
 			))}
 		</div>
 	);

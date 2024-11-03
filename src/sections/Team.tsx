@@ -11,7 +11,7 @@ export default function TeamSection() {
 	const [creatorCardsScope, creatorCards] = useAnimate();
 	return (
 		<div className={'flex flex-col gap-6 pt-12'}>
-			<div className={'flex flex-col'}>
+			<div>
 				<div className={'text-section-title flex gap-3'}>
 					<SectionTitle
 						className={'snap-start'}
@@ -69,7 +69,10 @@ export default function TeamSection() {
 					our team. If you are interested in contributing, please reach out to us.
 				</SectionSubtitle>
 			</div>
-			<div className={'flex flex-wrap gap-6'} ref={creatorCardsScope}>
+			<div
+				className={'mr-auto grid grid-flow-row gap-6 xl:grid-cols-2 xl:grid-rows-2'}
+				ref={creatorCardsScope}
+			>
 				{contributors
 					.filter((contributor) => contributor.creator)
 					.map((contributor) => (

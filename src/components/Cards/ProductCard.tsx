@@ -33,7 +33,7 @@ export default function ProductCard(props: { product: Product; imageClipPath?: C
 				</Carousel>
 			</div>
 			<div className="relative flex flex-col gap-3 p-6">
-				<Image src={props.product.background} alt={''} fill className="-z-10 scale-150" />
+				<Image src={props.product.background} alt={''} fill className="-z-10 scale-[200%]" />
 				<div className="space-y-3">
 					<h1 className="text-5xl font-bold">{props.product.name}</h1>
 					<p className="text-lg">{props.product.description}</p>

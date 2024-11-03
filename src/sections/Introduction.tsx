@@ -2,11 +2,10 @@
 import { PartButton } from '@/components/ui/Buttons/PartButton';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import WordPullUp from '@/components/ui/word-pull-up';
-import RoadmapPart from '@/parts/Roadmap';
 import TokenomicsPart from '@/parts/Tokenomics';
 import VisionPart from '@/parts/Vision';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
-import { LucideCoins, LucideEarth, LucideMap } from 'lucide-react';
+import { LucideCoins, LucideEarth } from 'lucide-react';
 import { useState } from 'react';
 // You're weird ESLint, that's used
 /* eslint-disable no-unused-vars */
@@ -65,21 +64,10 @@ export default function IntroductionSection() {
 						>
 							Vision
 						</PartButton>
-						<PartButton
-							className={'opacity-0'}
-							icon={<LucideMap />}
-							active={active === Part.Roadmap}
-							onClick={() => {
-								setActive(Part.Roadmap);
-							}}
-						>
-							Roadmap
-						</PartButton>
 					</div>
 				</div>
-				<div className={'flex'}>
+				<div className={'flex flex-shrink'}>
 					{active === Part.Tokenomics && <TokenomicsPart />} {active === Part.Vision && <VisionPart />}
-					{active == Part.Roadmap && <RoadmapPart />}
 				</div>
 			</div>
 		</div>

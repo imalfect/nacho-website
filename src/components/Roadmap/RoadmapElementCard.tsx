@@ -20,7 +20,7 @@ export default function RoadmapElementCard(props: {
 	description: string;
 }) {
 	return (
-		<RoadmapCard className={'roadmap-card'}>
+		<RoadmapCard className={'roadmap-card flex-1'}>
 			<div className={'space-y-2'}>
 				<h1 className={'text-4xl font-bold'}>{props.title}</h1>
 				<p

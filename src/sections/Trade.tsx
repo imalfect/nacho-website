@@ -82,7 +82,9 @@ export default function TradeSection() {
 		<div className={'flex max-w-[100vw] pt-12'}>
 			<div className={'space-y-6'}>
 				<div>
-					<SectionTitle className={'snap-start'}>📈 Trade Nacho</SectionTitle>
+					<SectionTitle className={'snap-start'} id={'trade-nacho'}>
+						📈 Trade Nacho
+					</SectionTitle>
 					<SectionSubtitle>
 						Learn about the best ways to buy and sell Nacho tokens. Currently listed on {exchanges.length}{' '}
 						exchanges
