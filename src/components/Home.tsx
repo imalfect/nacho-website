@@ -1,6 +1,7 @@
 'use client';
 // This component basically houses the entire website, and is used so that the metadata can be used in the page.
 import Background from '@/components/Background';
+import VideoDialog from '@/components/Dialogs/VideoDialog';
 import HeroSection from '@/sections/Hero';
 import IntroductionSection from '@/sections/Introduction';
 import ProductsSection from '@/sections/Products';
@@ -25,6 +26,7 @@ export default function Home() {
 				<VideosSection />
 			</main>
 			<Background />
+			<VideoDialog />
 		</>
 	);
 }

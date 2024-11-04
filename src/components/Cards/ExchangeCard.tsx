@@ -14,7 +14,9 @@ export default function ExchangeCard(props: {
 }) {
 	return (
 		<motion.div
-			className={'flex max-w-96 flex-col items-center gap-3 rounded-2xl border-2 border-primary p-6'}
+			className={
+				'flex max-w-96 flex-col items-center gap-3 rounded-2xl border-2 border-primary bg-background p-6'
+			}
 			whileHover={{ translateY: 2 }}
 		>
 			<Image src={props.exchange.logo} alt={''} width={150} height={150} />

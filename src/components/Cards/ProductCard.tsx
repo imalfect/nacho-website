@@ -16,7 +16,7 @@ export default function ProductCard(props: { product: Product; imageClipPath?: C
 	]);
 
 	return (
-		<div className="flex flex-col overflow-hidden rounded-2xl border-2 border-primary md:aspect-[16/12] md:h-[32rem]">
+		<div className="flex flex-col overflow-hidden rounded-2xl border-2 border-primary bg-background md:aspect-[16/12] md:h-[32rem]">
 			<div className="cutout flex-1 overflow-hidden" style={props.imageClipPath}>
 				<Carousel ref={emblaRef}>
 					<CarouselContent>

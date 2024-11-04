@@ -1,36 +1,30 @@
 'use client';
+import VideoDialog from '@/components/Dialogs/VideoDialog';
 import { Video } from '@/config/videos';
 import { motion } from 'framer-motion';
 import { LucidePlay } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
-import ReactPlayer from 'react-player/lazy';
-import { useIsClient } from 'usehooks-ts';
 export default function VideoCard(props: { video: Video }) {
-	const isClient = useIsClient();
-	const [isPlaying, setIsPlaying] = useState(false);
+	const [isDialogOpen, setIsDialogOpen] = useState(false);
 	return (
 		<motion.div
 			className={
-				'flex w-full max-w-full flex-col gap-6 rounded-2xl border-2 border-primary p-3 md:w-[43rem] md:p-6'
+				'flex w-full max-w-full flex-col gap-6 rounded-2xl border-2 border-primary bg-background p-3 md:w-[43rem] md:p-6'
 			}
 			whileHover={{ translateY: 2 }}
 		>
-			<div className={'aspect-video'}>
-				{isClient && isPlaying && <ReactPlayer url={props.video.url} controls width={'100%'} />}
-				{!isPlaying && (
-					<div className={'relative aspect-video'}>
-						<Image src={'/img/temp/one.png'} alt={'Video Thumbnail'} fill />
-						<button
-							onClick={() => setIsPlaying(true)}
-							className={
-								'absolute inset-0 m-auto flex items-center justify-center transition-transform hover:scale-110 active:scale-90'
-							}
-						>
-							<LucidePlay size={48} />
-						</button>
-					</div>
-				)}
+			<VideoDialog video={props.video} open={isDialogOpen} onOpenChange={setIsDialogOpen} />
+			<div className={'relative aspect-video'}>
+				<Image src={'/img/temp/one.png'} alt={'Video Thumbnail'} fill />
+				<button
+					onClick={() => setIsDialogOpen(true)}
+					className={
+						'absolute inset-0 m-auto flex items-center justify-center transition-transform hover:scale-110 active:scale-90'
+					}
+				>
+					<LucidePlay size={48} />
+				</button>
 			</div>
 			<div className={'flex items-start gap-3'}>
 				<Image

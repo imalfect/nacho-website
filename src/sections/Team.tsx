@@ -70,7 +70,7 @@ export default function TeamSection() {
 				</SectionSubtitle>
 			</div>
 			<div
-				className={'mr-auto grid grid-flow-row gap-6 xl:grid-cols-2 xl:grid-rows-2'}
+				className={'3xl:grid-cols-3 mr-auto grid grid-flow-row auto-rows-auto gap-6 xl:grid-cols-2'}
 				ref={creatorCardsScope}
 			>
 				{contributors

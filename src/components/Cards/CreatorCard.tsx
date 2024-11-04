@@ -16,7 +16,7 @@ export function CreatorCard(props: {
 	const isClient = useIsClient();
 	return (
 		<motion.div
-			className="creator-card relative flex max-w-[45rem] flex-col items-center justify-between gap-6 overflow-hidden rounded-2xl border border-gray-500 p-6 shadow-sm md:flex-row md:items-start md:gap-12 md:p-12"
+			className="creator-card relative flex max-w-[45rem] flex-col items-center justify-between gap-6 overflow-hidden rounded-2xl border border-gray-500 bg-background p-6 shadow-sm md:flex-row md:items-start md:gap-12 md:p-12"
 			whileHover={{ translateY: 2 }}
 			initial={{ scale: 0.0 }}
 		>

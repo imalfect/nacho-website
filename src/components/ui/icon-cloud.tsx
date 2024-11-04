@@ -47,7 +47,13 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
 			rel: undefined,
 			onClick: (e: any) => {
 				e.preventDefault();
-				window.open(socials.find((social) => social.id === icon.slug)?.url, '_blank');
+				setTimeout(() => {
+					// Workaround for Safari
+					if (navigator.userAgent.indexOf('Safari') != -1) {
+						window.open(socials.find((social) => social.id === icon.slug)?.url, '_top');
+					}
+					window.open(socials.find((social) => social.id === icon.slug)?.url, '_blank');
+				});
 			}
 		}
 	});

@@ -7,6 +7,13 @@ import Link from 'next/link';
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
 	const [linkButtonsScope, animateLinkButtons] = useAnimate();
+	// Const { scrollY } = useScroll({
+	// 	Container: ref
+	// });
+	// Const limitedScrollY = useSpring(useTransform(scrollY, [0, 400], [0, 400]), {
+	// 	Stiffness: 100,
+	// 	Damping: 20
+	// });
 
 	return (
 		<div

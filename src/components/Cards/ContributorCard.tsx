@@ -11,7 +11,7 @@ export default function ContributorCard(props: {
 	return (
 		<motion.div
 			className={
-				'contributor-card flex w-80 flex-col items-center gap-3 rounded-2xl border-2 border-gray-500 p-3 shadow-sm md:p-6'
+				'contributor-card flex w-80 flex-col items-center gap-3 rounded-2xl border-2 border-gray-500 bg-background p-3 shadow-sm md:p-6'
 			}
 			whileHover={{ translateY: 2 }}
 		>
