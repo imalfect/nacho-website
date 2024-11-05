@@ -211,6 +211,15 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/MasterCryp42111', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/Crypt0MasterX', icon: <SiTelegram /> }
 		]
+	},
+	{
+		name: 'SeiNonymous',
+		avatar: '/img/avatars/seinonymous.webp',
+		role: 'Allstar Contributor',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/KaspaDegen', icon: <SiX /> },
+			{ name: 'Discord', url: 'https://discord.com/users/seinonymous', icon: <SiDiscord /> }
+		]
 	}
 ];
 export default contributors;
