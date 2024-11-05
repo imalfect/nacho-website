@@ -19,12 +19,7 @@ export default function RoadmapCarousel() {
 					{roadmap.map((element, index) => {
 						return (
 							<CarouselItem key={index} className={'flex basis-auto pl-6'}>
-								<RoadmapElementCard
-									title={element.title}
-									statusIcon={element.statusIcon}
-									description={element.description}
-									status={element.status}
-								/>
+								<RoadmapElementCard roadmapElement={element} />
 							</CarouselItem>
 						);
 					})}

@@ -5,7 +5,7 @@ export default function RoadmapSection() {
 	return (
 		<div className={'flex flex-col gap-6 pt-12'}>
 			<div>
-				<SectionTitle className={'snap-start'}>About to happen 🚗</SectionTitle>
+				<SectionTitle className={'snap-start'}>What&apos;s on the horizon ⛅</SectionTitle>
 				<SectionSubtitle>We have a lot planned for the future, check out our roadmap.</SectionSubtitle>
 			</div>
 			<RoadmapCarousel />

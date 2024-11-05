@@ -44,7 +44,7 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'NACHO Listings',
-		status: 'In Progress (Priority)',
+		status: 'Phase 1 Complete',
 		statusIcon: <LucideConstruction />,
 		statusClassName: 'text-yellow-500',
 		description:
@@ -52,9 +52,9 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'Governance',
-		status: 'Discussion Phase',
+		status: 'Active Development',
 		statusIcon: <LucideClock />,
-		statusClassName: 'text-blue-500',
+		statusClassName: 'text-yellow-500',
 		description:
 			'Developing a seamless and user-friendly governance model that allows NACHO token holders to have their voices heard and votes counted. The goal is community governance implementation by Dec 2024.'
 	},
@@ -70,7 +70,7 @@ export const roadmap: RoadmapElement[] = [
 		title: 'K.A.T.',
 		status: 'Research + Planning',
 		statusIcon: <LucideAlertTriangle />,
-		statusClassName: 'text-red-500',
+		statusClassName: 'text-blue-500',
 		description:
 			'Kaspa Alliance for Transparency (K.A.T.) is a community-owned organization supporting smaller projects, amplifying voices, and fostering transparency. It will play a key role in supporting the Kaspa ecosystem.'
 	}

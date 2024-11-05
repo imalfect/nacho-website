@@ -16,7 +16,13 @@ export default function VideoCard(props: { video: Video }) {
 		>
 			<VideoDialog video={props.video} open={isDialogOpen} onOpenChange={setIsDialogOpen} />
 			<div className={'relative aspect-video'}>
-				<Image src={'/img/temp/one.png'} alt={'Video Thumbnail'} fill />
+				<Image
+					src={props.video.thumbnail}
+					alt={'Video Thumbnail'}
+					fill
+					className={'brightness-75'}
+					loading={'lazy'}
+				/>
 				<button
 					onClick={() => setIsDialogOpen(true)}
 					className={
@@ -26,18 +32,15 @@ export default function VideoCard(props: { video: Video }) {
 					<LucidePlay size={48} />
 				</button>
 			</div>
-			<div className={'flex items-start gap-3'}>
+			<div className={'flex items-center gap-6'}>
 				<Image
-					src={'/img/avatars/ashton.webp'}
+					src={props.video.author.avatar}
 					alt={''}
 					width={70}
 					height={70}
 					className={'rounded-full'}
 				/>
-				<div>
-					<h1 className={'text-3xl font-bold'}>Shai (Deshe) Wyborski</h1>
-					<p className={'text-xl'}>Kaspa Researcher</p>
-				</div>
+				<h1 className={'text-3xl font-bold'}>{props.video.author.name}</h1>
 			</div>
 		</motion.div>
 	);

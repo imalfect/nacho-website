@@ -47,9 +47,9 @@ export default function OrbitingCircles({
 				}
 				className={cn(
 					'absolute flex size-full transform-gpu animate-orbit items-center justify-center rounded-full border',
-					'[animation-delay:calc(var(--delay)*1000ms)]',
+					'opacity-90 [animation-delay:calc(var(--delay)*1000ms)]',
 					reverse && '[animation-direction:reverse]',
-					'hover:[animation-play-state:paused]', // Pause animation on hover
+					'hover:opacity-100 hover:[animation-play-state:paused]', // Pause animation on hover
 					className
 				)}
 			>

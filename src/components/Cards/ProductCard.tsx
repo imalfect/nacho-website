@@ -3,28 +3,32 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 import { Product } from '@/config/products';
 import CSS from 'csstype';
 import Autoplay from 'embla-carousel-autoplay';
-import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
 
 export default function ProductCard(props: { product: Product; imageClipPath?: CSS.Properties }) {
-	const [emblaRef] = useEmblaCarousel({ loop: true, slidesToScroll: 1 }, [
-		Autoplay({
-			playOnInit: true,
-			delay: 5000
-		})
-	]);
-
 	return (
 		<div className="flex flex-col overflow-hidden rounded-2xl border-2 border-primary bg-background md:aspect-[16/12] md:h-[32rem]">
 			<div className="cutout flex-1 overflow-hidden" style={props.imageClipPath}>
-				<Carousel ref={emblaRef}>
+				<Carousel
+					opts={{
+						loop: true,
+						slidesToScroll: 1,
+						dragFree: false
+					}}
+					plugins={[
+						Autoplay({
+							delay: 5000,
+							playOnInit: true
+						})
+					]}
+				>
 					<CarouselContent>
 						{props.product.images.map((image, index) => (
 							<CarouselItem key={index}>
 								<div className="relative aspect-video h-full">
 									<Zoom>
-										<Image src={image} alt={''} fill className="object-cover" />
+										<Image src={image} alt={''} fill className={'object-cover object-top'} />
 									</Zoom>
 								</div>
 							</CarouselItem>

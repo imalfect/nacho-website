@@ -149,6 +149,68 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/dsr', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/cryptopawsitive', icon: <SiX /> }
 		]
+	},
+	{
+		name: 'Nick Nach-o',
+		avatar: '/img/avatars/nick-nacho.webp',
+		role: 'Allstar Contributor',
+		socials: [{ name: 'Twitter', url: 'https://twitter.com/nicknach01', icon: <SiX /> }]
+	},
+	{
+		name: 'SlightEdged',
+		avatar: '/img/avatars/slightedged.webp',
+		role: 'Moderator Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/SlightEdged', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/SlightEdged', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/SlightEdged', icon: <SiTelegram /> }
+		]
+	},
+	{
+		name: 'Vidar',
+		avatar: '/img/avatars/vidar.webp',
+		role: 'Moderator Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/vidar_vd', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/ivak_a', icon: <SiX /> }
+		]
+	},
+	{
+		name: 'CoinChimp',
+		avatar: '/img/avatars/coinchimp.webp',
+		role: 'Former Creator',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/coinchimp', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/coinchimpx', icon: <SiX /> }
+		]
+	},
+	{
+		name: 'Daniela',
+		avatar: '/img/avatars/daniela.webp',
+		role: 'Former Creator',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/danielajp7', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/DanielaJer16470', icon: <SiX /> }
+		]
+	},
+	{
+		name: 'CyberGent',
+		avatar: '/img/avatars/cybergent.webp',
+		role: 'Ambassador',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/cybergent_', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/cryptoliver_', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/cyber_gent', icon: <SiTelegram /> }
+		]
+	},
+	{
+		name: 'Crypto Master',
+		avatar: '/img/avatars/crypto-master.webp',
+		role: 'Media (Dis) Mod (TG)',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/MasterCryp42111', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/Crypt0MasterX', icon: <SiTelegram /> }
+		]
 	}
 ];
 export default contributors;

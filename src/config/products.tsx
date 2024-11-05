@@ -19,7 +19,10 @@ const products: Product[] = [
 			'KatScan, integrates with Kasplex protocols to provide comprehensive analytics for the KAS and KRC20 ecosystems, offering valuable insights for wallet holders and the broader community.',
 		background: '/img/backgrounds/soft-lines.svg',
 		badges: ['D-app', 'KRC20'],
-		images: ['/img/temp/one.png', '/img/temp/two.png'],
+		images: [
+			'/img/products/kat-scan/kat-scan-mobile-dark.webp',
+			'/img/products/kat-scan/kat-scan-mobile-light.webp'
+		],
 		links: [{ url: 'https://katscan.xyz', icon: <LucideGlobe /> }]
 	},
 	{
@@ -29,7 +32,10 @@ const products: Product[] = [
 			'Kat Bot is a KRC20 Discord bot developed in collaboration with KSPR, designed to provide seamless access to token information and wallet functions. Users can mint, deploy, and interact with KRC20 tokens directly from Discord, making it easier to manage tokens within the Kaspa ecosystem.',
 		background: '/img/backgrounds/confetti.svg',
 		badges: ['Discord Bot', 'KRC20'],
-		images: ['/img/temp/one.png', '/img/temp/two.png'],
+		images: [
+			'/img/products/kat-bot/kat-bot-mobile-dark.webp',
+			'/img/products/kat-bot/kat-bot-mobile-light.webp'
+		],
 		links: [{ url: 'https://katscan.xyz', icon: <LucideGlobe /> }]
 	}
 ];
