@@ -220,6 +220,16 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/KaspaDegen', icon: <SiX /> },
 			{ name: 'Discord', url: 'https://discord.com/users/seinonymous', icon: <SiDiscord /> }
 		]
+	},
+	{
+		name: 'iMalFect',
+		avatar: '/img/avatars/imalfect.webp',
+		role: 'Web Developer',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/imaldev', icon: <SiX /> },
+			{ name: 'Discord', url: 'https://discord.com/users/852640730093453372', icon: <SiDiscord /> },
+			{ name: 'GitHub', url: 'https://github.com/imalfect', icon: <SiGithub /> }
+		]
 	}
 ];
 export default contributors;

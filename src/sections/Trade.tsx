@@ -82,13 +82,8 @@ export default function TradeSection() {
 		<div className={'flex max-w-[100vw] pt-12'}>
 			<div className={'space-y-6'}>
 				<div>
-					<SectionTitle className={'snap-start'} id={'trade-nacho'}>
-						📈 Trade Nacho
-					</SectionTitle>
-					<SectionSubtitle>
-						Learn about the best ways to buy and sell Nacho tokens. Currently listed on {exchanges.length}{' '}
-						exchanges
-					</SectionSubtitle>
+					<SectionTitle id={'trade-nacho'}>📈 Trade Nacho</SectionTitle>
+					<SectionSubtitle>Learn about the best ways to buy and sell Nacho tokens.</SectionSubtitle>
 				</div>
 				<div className={'flex w-fit flex-wrap gap-6'}>
 					{exchanges.map((exchange) => (

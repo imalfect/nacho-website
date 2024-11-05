@@ -12,7 +12,7 @@ const exchanges: Exchange[] = [
 			'KSPR Bot is your gateway to the Kasplex protocol, enabling you to deploy, mint, and transfer KRC20 tokens effortlessly.',
 		logo: '/img/exchanges/kspr-bot.png',
 		id: 'kspr-bot',
-		url: 'https://ksprbot.com'
+		url: 'https://t.me/kspr_home_bot?start=nacho'
 	},
 	{
 		name: 'Pionex',
@@ -20,7 +20,7 @@ const exchanges: Exchange[] = [
 			"Pionex is a crypto exchange founded in 2019, offering trading bots and low fees of 0.05%. It's registered in the British Virgin Islands",
 		logo: '/img/exchanges/pionex.svg',
 		id: 'pionex',
-		url: 'https://pionex.com'
+		url: 'https://pionex.com/en/signUp?r=GONACHO'
 	},
 	{
 		name: 'CoinEx',
@@ -28,7 +28,7 @@ const exchanges: Exchange[] = [
 			'CoinEx is a centralized crypto exchange founded in 2017 in Samoa. It supports 1,200+ cryptocurrencies with low trading fees of 0.1%',
 		logo: '/img/exchanges/coinex.svg',
 		id: 'coinex',
-		url: 'https://coinex.com'
+		url: 'https://www.coinex.com/register?refer_code=6zrua'
 	}
 ];
 export default exchanges;

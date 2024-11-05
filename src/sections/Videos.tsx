@@ -9,7 +9,7 @@ export default function VideosSection() {
 	return (
 		<div className={'flex max-w-full flex-col gap-6 pt-12'}>
 			<div>
-				<SectionTitle className={'snap-start'}>Nacho TV 🍿</SectionTitle>
+				<SectionTitle>Nacho TV 🍿</SectionTitle>
 				<SectionSubtitle>Watch some videos from our community.</SectionSubtitle>
 			</div>
 			{/*<TestimonialsCarousel />*/}
@@ -20,17 +20,11 @@ export default function VideosSection() {
 					pauseOnViewportLeave={false}
 					vertical={!isBigScreen}
 				>
-					{videos.map((video, index) => (
+					{videos.map((video) => (
 						<VideoCard video={video} key={video.url} />
 					))}
 				</Marquee>
 			)}
-			{/* Throwing it here so that it scales nicely */}
-			<div className={'mt-auto text-center text-gray-200'}>
-				<p>
-					&copy; Nacho the Kat 2024 - Present, All rights reserved. Website made with ❤️ by iMalFect
-				</p>
-			</div>
 		</div>
 	);
 }

@@ -2,7 +2,7 @@ import { PartButton } from '@/components/ui/Buttons/PartButton';
 import LetterPullup from '@/components/ui/letter-pullup';
 import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
-import { LucideChartCandlestick, LucideNotepadText, LucideScroll } from 'lucide-react';
+import { LucideChartCandlestick, LucideNotepadText, LucideScroll, LucideUsers } from 'lucide-react';
 import Link from 'next/link';
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
@@ -24,7 +24,7 @@ export default function HeroSection() {
 			<div className={'flex flex-col gap-6'}>
 				<div>
 					<LetterPullup
-						words={"A coin inspired by Nacho Wyborski's cat"}
+						words={"A token inspired by Shai Wyborski's Cat"}
 						delay={0.05}
 						className={'text-6xl md:text-7xl'}
 						onAnimationComplete={() => {
@@ -68,7 +68,12 @@ export default function HeroSection() {
 							onClick={() => {}}
 							className={'opacity-0'}
 						>
-							Trade Nacho
+							Trade
+						</PartButton>
+					</Link>
+					<Link href={'#socials'}>
+						<PartButton active={false} icon={<LucideUsers />} onClick={() => {}} className={'opacity-0'}>
+							Socials
 						</PartButton>
 					</Link>
 				</div>

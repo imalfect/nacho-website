@@ -10,10 +10,8 @@ export default function SocialsSection() {
 	return (
 		<div className={'flex w-full flex-col gap-6 pt-12'}>
 			<div>
-				<SectionTitle className={'snap-start'}>Join the Nacho&nbsp;Nation&nbsp;🧑‍🤝‍🧑</SectionTitle>
-				<SectionSubtitle>
-					Join and contribute to Nacho through these channels. (fix this text)
-				</SectionSubtitle>
+				<SectionTitle id={'socials'}>Join the Nacho&nbsp;Nation&nbsp;🧑‍🤝‍🧑</SectionTitle>
+				<SectionSubtitle>Help us build the future of the Kaspa ecosystem.</SectionSubtitle>
 			</div>
 			<div className={'dark mx-auto'}>
 				{/*<NachoNationOrbit />*/}

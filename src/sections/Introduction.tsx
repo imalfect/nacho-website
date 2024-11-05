@@ -25,7 +25,7 @@ export default function IntroductionSection() {
 				<div className={'flex max-w-[32rem] flex-shrink-0 flex-col space-y-6'}>
 					<div>
 						<WordPullUp
-							words={'What is Nacho?'}
+							words={'Get to know Nacho'}
 							className={'text-section-title'}
 							onAnimationComplete={() => {
 								taglineControls.start({
@@ -40,7 +40,7 @@ export default function IntroductionSection() {
 								animatePartButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) });
 							}}
 						>
-							Learn more about the token and its goals.
+							Learn more about the Nacho project
 						</SectionSubtitle>
 					</div>
 					<div className={'flex w-fit flex-col gap-6'} ref={partButtonsScope}>

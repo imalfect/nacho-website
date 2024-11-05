@@ -17,7 +17,7 @@ export default function ProductsSection() {
 		<div className={'flex max-w-[100vw] pt-12'}>
 			<div className={'space-y-6'}>
 				<div>
-					<SectionTitle className={'snap-start'}>Check out our ⭐&nbsp;Products&nbsp;⭐</SectionTitle>
+					<SectionTitle>Check out our ⭐&nbsp;Products&nbsp;⭐</SectionTitle>
 					<SectionSubtitle>
 						Take a look at what we&apos;ve done and how you can benefit from it.
 					</SectionSubtitle>

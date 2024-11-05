@@ -3,7 +3,7 @@ import socials from '@/config/socials';
 import Image from 'next/image';
 export default function NachoNationOrbit() {
 	return (
-		<div className="relative flex h-[60rem] w-[980px] flex-col items-center justify-center overflow-hidden rounded-lg bg-background">
+		<div className="relative flex h-[60rem] w-[980px] flex-col items-center justify-center overflow-hidden rounded-lg">
 			<Image src={'/img/brand/nacho.svg'} alt={'Nacho the Kat'} width={120} height={120} />
 			{socials.map((social) => (
 				<SocialCircle
