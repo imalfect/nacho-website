@@ -213,8 +213,8 @@ const contributors: Contributor[] = [
 		]
 	},
 	{
-		name: 'SeiNonymous',
-		avatar: '/img/avatars/seinonymous.webp',
+		name: 'Dong',
+		avatar: '/img/avatars/dong.webp',
 		role: 'Allstar Contributor',
 		socials: [
 			{ name: 'Twitter', url: 'https://twitter.com/KaspaDegen', icon: <SiX /> },
