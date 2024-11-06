@@ -9,7 +9,7 @@ const exchanges: Exchange[] = [
 	{
 		name: 'KSPR Bot',
 		description:
-			'KSPR Bot is your gateway to the Kasplex protocol, enabling you to deploy, mint, and transfer KRC20 tokens effortlessly.',
+			'KSPR Bot offers seamless access to the Kasplex protocol, allowing you to deploy, mint, and transfer KRC20 tokens with ease.',
 		logo: '/img/exchanges/kspr-bot.png',
 		id: 'kspr-bot',
 		url: 'https://t.me/kspr_home_bot?start=nacho'
@@ -17,15 +17,23 @@ const exchanges: Exchange[] = [
 	{
 		name: 'Pionex',
 		description:
-			"Pionex is a crypto exchange founded in 2019, offering trading bots and low fees of 0.05%. It's registered in the British Virgin Islands",
+			'Pionex, established in 2019, is a crypto exchange known for its innovative trading bots and minimal fees of 0.05%. Based in the British Virgin Islands.',
 		logo: '/img/exchanges/pionex.svg',
 		id: 'pionex',
 		url: 'https://pionex.com/en/signUp?r=GONACHO'
 	},
 	{
+		name: 'PionexUS',
+		description:
+			"PionexUS brings the power of Pionex's automated trading to the US market, offering advanced trading bots and low fees of 0.05%, tailored for US-based users.",
+		logo: '/img/exchanges/pionex.svg',
+		id: 'pionex-us',
+		url: 'https://pionex.us/en/signUp?r=GONACHO'
+	},
+	{
 		name: 'CoinEx',
 		description:
-			'CoinEx is a centralized crypto exchange founded in 2017 in Samoa. It supports 1,200+ cryptocurrencies with low trading fees of 0.1%',
+			'CoinEx, a centralized exchange launched in 2017, supports over 1,200 cryptocurrencies with competitive trading fees of 0.1%. Registered in Samoa.',
 		logo: '/img/exchanges/coinex.svg',
 		id: 'coinex',
 		url: 'https://www.coinex.com/register?refer_code=6zrua'

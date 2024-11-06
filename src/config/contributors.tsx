@@ -252,6 +252,15 @@ const contributors: Contributor[] = [
 			{ name: 'Twitter', url: 'https://twitter.com/goonboycrypto', icon: <SiX /> },
 			{ name: 'Telegram', url: 'https://t.me/goonboycrypto', icon: <SiTelegram /> }
 		]
+	},
+	{
+		name: 'BaldNBeard3d',
+		avatar: '/img/avatars/baldnbeard3d.webp',
+		role: 'Marketing Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/BaldNBeard3d', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/BaldNBeard3d ', icon: <SiX /> }
+		]
 	}
 ];
 export default contributors;
