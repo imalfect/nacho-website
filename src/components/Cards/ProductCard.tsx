@@ -3,12 +3,17 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 import { Product } from '@/config/products';
 import CSS from 'csstype';
 import Autoplay from 'embla-carousel-autoplay';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Zoom from 'react-medium-image-zoom';
-
 export default function ProductCard(props: { product: Product; imageClipPath?: CSS.Properties }) {
 	return (
-		<div className="flex flex-col overflow-hidden rounded-2xl border-2 border-primary bg-background md:aspect-[16/12] md:h-[32rem]">
+		<motion.div
+			className="flex flex-col overflow-hidden rounded-2xl border-2 border-primary bg-background md:aspect-[16/12] md:h-[32rem]"
+			whileHover={{
+				translateY: 2
+			}}
+		>
 			<div className="cutout flex-1 overflow-hidden" style={props.imageClipPath}>
 				<Carousel
 					opts={{
@@ -45,7 +50,7 @@ export default function ProductCard(props: { product: Product; imageClipPath?: C
 				<div className="mt-auto flex items-center justify-between">
 					<div className="flex gap-3">
 						{props.product.badges?.map((badge, index) => (
-							<span key={index} className="rounded-full bg-primary px-3 py-1 text-white">
+							<span key={index} className="rounded-full bg-primary px-3 py-1 text-background">
 								{badge}
 							</span>
 						))}
@@ -55,6 +60,6 @@ export default function ProductCard(props: { product: Product; imageClipPath?: C
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

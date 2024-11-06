@@ -18,13 +18,13 @@ export default function HeroSection() {
 	return (
 		<div
 			className={
-				'relative mt-12 flex h-screen flex-col items-center justify-between md:mt-0 md:flex-row'
+				'relative mt-12 flex min-h-screen flex-col items-center justify-between md:mt-0 md:flex-row'
 			}
 		>
 			<div className={'flex flex-col gap-6'}>
 				<div>
 					<LetterPullup
-						words={"A token inspired by Shai Wyborski's Cat"}
+						words={"Nacho the Kat, inspired by Shai Wyborski's pet cat."}
 						delay={0.05}
 						className={'text-6xl md:text-7xl'}
 						onAnimationComplete={() => {
@@ -42,16 +42,16 @@ export default function HeroSection() {
 							animateLinkButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) });
 						}}
 					>
-						A KRC-20 token on Kasplex on the Kaspa Blockchain.
+						The first fair-launched memecoin on Kaspa.
 					</SectionSubtitle>
 				</div>
 				<div className={'flex flex-wrap gap-6'} ref={linkButtonsScope}>
-					<Link href={'/documents/whitepaper.pdf'}>
+					<Link href={'/documents/whitepaper.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>
 							Whitepaper
 						</PartButton>
 					</Link>
-					<Link href={'/documents/one-pager.pdf'}>
+					<Link href={'/documents/one-pager.pdf'} target={'_blank'}>
 						<PartButton
 							active={false}
 							icon={<LucideNotepadText />}

@@ -79,7 +79,7 @@ export default function TradeSection() {
 		]
 	};
 	return (
-		<div className={'flex max-w-[100vw] pt-12'}>
+		<div className={'flex pt-12'}>
 			<div className={'space-y-6'}>
 				<div>
 					<SectionTitle id={'trade-nacho'}>📈 Trade Nacho</SectionTitle>

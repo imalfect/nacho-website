@@ -37,7 +37,7 @@ export default function TeamSection() {
 					))}
 			</div>
 
-			<Marquee pauseOnHover className="[--duration:10s] md:[--duration:20s]">
+			<Marquee pauseOnHover className="[--duration:30s]">
 				{contributors
 					.filter((contributor) => !contributor.creator)
 					.map((contributor) => (

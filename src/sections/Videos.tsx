@@ -7,7 +7,7 @@ export default function VideosSection() {
 	const isBigScreen = useMediaQuery('(min-width: 768px)');
 	const isClient = useIsClient();
 	return (
-		<div className={'flex max-w-full flex-col gap-6 pt-12'}>
+		<div className={'flex flex-col gap-6 pt-12'}>
 			<div>
 				<SectionTitle>Nacho TV 🍿</SectionTitle>
 				<SectionSubtitle>Watch some videos from our community.</SectionSubtitle>
@@ -16,7 +16,7 @@ export default function VideosSection() {
 			{isClient && (
 				<Marquee
 					pauseOnHover
-					className={'max-h-[65vh] [--duration:20s] md:max-h-full'}
+					className={'max-h-[65vh] [--duration:30s] md:max-h-full'}
 					pauseOnViewportLeave={false}
 					vertical={!isBigScreen}
 				>

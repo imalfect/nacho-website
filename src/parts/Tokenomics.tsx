@@ -1,6 +1,6 @@
 import TokenomicsInformation from '@/components/TokenomicsInformation';
 import { motion, stagger, useAnimate } from 'framer-motion';
-import { LucideCheck, LucideCoins, LucideHandCoins, LucideX } from 'lucide-react';
+import { LucideCheck, LucideCoins, LucideHandCoins } from 'lucide-react';
 
 export default function TokenomicsPart() {
 	const [tokenomicsInfoScope, tokenomicsInfoParagraphs] = useAnimate();
@@ -38,9 +38,13 @@ export default function TokenomicsPart() {
 					icon={<LucideHandCoins />}
 				/>
 				<TokenomicsInformation label={'Fair Launch'} icon={<LucideCheck />} className={'opacity-0'} />
-				<TokenomicsInformation label={'No presale'} icon={<LucideX />} className={'opacity-0'} />
-				<TokenomicsInformation label={'No pre-allocation'} icon={<LucideX />} className={'opacity-0'} />
-				<TokenomicsInformation label={'No taxes'} icon={<LucideX />} className={'opacity-0'} />
+				<TokenomicsInformation label={'No presale'} icon={<LucideCheck />} className={'opacity-0'} />
+				<TokenomicsInformation
+					label={'No pre-allocation'}
+					icon={<LucideCheck />}
+					className={'opacity-0'}
+				/>
+				<TokenomicsInformation label={'No taxes'} icon={<LucideCheck />} className={'opacity-0'} />
 			</div>
 		</section>
 	);

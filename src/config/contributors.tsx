@@ -230,6 +230,28 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/852640730093453372', icon: <SiDiscord /> },
 			{ name: 'GitHub', url: 'https://github.com/imalfect', icon: <SiGithub /> }
 		]
+	},
+	{
+		name: 'AaronW',
+		avatar: '/img/avatars/aaronw.webp',
+		role: 'Moderator Team',
+		socials: [{ name: 'Discord', url: 'https://discord.com/users/AaronW', icon: <SiDiscord /> }]
+	},
+	{
+		name: 'JSavvv',
+		avatar: '/img/avatars/jsavvv.webp',
+		role: 'Allstar Contributor',
+		socials: [{ name: 'Discord', url: 'https://discord.com/users/JSavvv0', icon: <SiDiscord /> }]
+	},
+	{
+		name: 'GoonBoyCrypto',
+		avatar: '/img/avatars/goonboycrypto.webp',
+		role: 'Moderator Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/GoonBoyCrypto', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/goonboycrypto', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/goonboycrypto', icon: <SiTelegram /> }
+		]
 	}
 ];
 export default contributors;

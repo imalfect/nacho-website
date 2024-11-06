@@ -36,7 +36,9 @@ let images: ImageData[] = [
 	{ src: '/img/illustrations/nacho-walking-left.svg', alt: 'Nacho Walking Left' }
 ];
 images = images.concat(images); // Duplicate images for more coverage
-
+// Calculate the amount of images for a screen width (1920x1080 should contain all 20, while a mobile device should have 5, write a formula)
+const imagesCount = Math.ceil((window.innerWidth / 1920) * 20);
+images = images.slice(0, imagesCount);
 function AnimatedImage({
 	src,
 	alt,
