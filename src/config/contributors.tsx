@@ -261,6 +261,47 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/BaldNBeard3d', icon: <SiDiscord /> },
 			{ name: 'Twitter', url: 'https://twitter.com/BaldNBeard3d ', icon: <SiX /> }
 		]
+	},
+	{
+		name: 'LTforever',
+		avatar: '/img/avatars/ltforever.webp',
+		role: 'Moderator Team',
+		socials: [{ name: 'Discord', url: 'https://discord.com/users/LTforever', icon: <SiDiscord /> }],
+		creator: false
+	},
+	{
+		name: 'kaspian90',
+		avatar: '/img/avatars/kaspian90.webp',
+		role: 'Ambassador',
+		socials: [],
+		creator: false
+	},
+	{
+		name: 'TheBecketList',
+		avatar: '/img/avatars/thebecketlist.webp',
+		role: 'Media Team',
+		socials: [{ name: 'Twitter', url: 'https://twitter.com/BecketBroYo', icon: <SiX /> }],
+		creator: false
+	},
+	{
+		name: 'scryptoure',
+		avatar: '/img/avatars/scryptoure.webp',
+		role: 'Media Team',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/scryptoure', icon: <SiX /> },
+			{ name: 'Discord', url: 'https://discord.com/users/scryptoure', icon: <SiDiscord /> }
+		],
+		creator: false
+	},
+	{
+		name: 'caixas4697',
+		avatar: '/img/avatars/caixas.webp',
+		role: 'Allstar Contributor',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/David%20Masters', icon: <SiX /> },
+			{ name: 'Discord', url: 'https://discord.com/users/Caixas', icon: <SiDiscord /> }
+		],
+		creator: false
 	}
 ];
 export default contributors;
