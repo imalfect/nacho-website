@@ -20,7 +20,7 @@ export default function IntroductionSection() {
 				<div className={'flex flex-shrink-0 flex-col space-y-6'}>
 					<div>
 						<SectionTitle>Get to know Nacho</SectionTitle>
-						<SectionSubtitle>Learn more about the Nacho project</SectionSubtitle>
+						<SectionSubtitle>Learn more about the Nacho project.</SectionSubtitle>
 					</div>
 					<div className={'flex w-fit flex-col gap-6'}>
 						<PartButton
