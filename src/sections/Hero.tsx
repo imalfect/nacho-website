@@ -46,7 +46,7 @@ export default function HeroSection() {
 					</SectionSubtitle>
 				</div>
 				<div className={'flex flex-wrap gap-6'} ref={linkButtonsScope}>
-					<Link href={'/documents/whitepaper.pdf'} target={'_blank'}>
+					<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>
 							Whitepaper
 						</PartButton>
