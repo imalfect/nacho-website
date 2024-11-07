@@ -28,7 +28,7 @@ const exchanges: Exchange[] = [
 			"PionexUS brings the power of Pionex's automated trading to the US market, offering advanced trading bots and low fees of 0.05%, tailored for US-based users.",
 		logo: '/img/exchanges/pionex.svg',
 		id: 'pionex-us',
-		url: 'https://pionex.us/en/signUp?r=GONACHO'
+		url: 'https://accounts.pionex.us/en/signup?ref=NACHO'
 	},
 	{
 		name: 'CoinEx',
