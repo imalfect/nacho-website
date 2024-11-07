@@ -10,7 +10,7 @@ export interface Video {
 const videos: Video[] = [
 	{
 		title: 'Kaspa Bottom is IN?!! (2 Kaspa Memecoins to 1B)',
-		thumbnail: '/img/thumbnails/Ba7l0zAvis0.webp',
+		thumbnail: '/img/thumbnails/youtube/Ba7l0zAvis0.webp',
 		url: 'https://www.youtube.com/watch?v=Ba7l0zAvis0',
 		author: {
 			name: 'Sin City Crypto',
@@ -19,7 +19,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'NEXT X200 MEMECOIN (Full Breakdown)',
-		thumbnail: '/img/thumbnails/DhU5N3hgIm0.webp',
+		thumbnail: '/img/thumbnails/youtube/DhU5N3hgIm0.webp',
 		url: 'https://www.youtube.com/watch?v=DhU5N3hgIm0',
 		author: {
 			name: 's c a p e . 𐤊',
@@ -28,7 +28,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'THIS MEMECOIN WILL MAKE MILLIONAIRES',
-		thumbnail: '/img/thumbnails/DpgQ2Q67EtM.webp',
+		thumbnail: '/img/thumbnails/youtube/DpgQ2Q67EtM.webp',
 		url: 'https://www.youtube.com/watch?v=DpgQ2Q67EtM',
 		author: {
 			name: 'Smart Money Crypto',
@@ -37,7 +37,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'Nacho the Kat: Will this Memecoin make MILLIONAIRES? 100X?! | #Kaspa',
-		thumbnail: '/img/thumbnails/nswpOaERUCo.webp',
+		thumbnail: '/img/thumbnails/youtube/nswpOaERUCo.webp',
 		url: 'https://www.youtube.com/watch?v=nswpOaERUCo',
 		author: {
 			name: 'Kaspa King',
@@ -46,7 +46,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'Want to Buy KASPA KRC 20 Tokens Like a PRO? Watch This Now!',
-		thumbnail: '/img/thumbnails/HHDPOS48jGA.webp',
+		thumbnail: '/img/thumbnails/youtube/HHDPOS48jGA.webp',
 		url: 'https://www.youtube.com/watch?v=HHDPOS48jGA',
 		author: {
 			name: 'KatDaddyKrypto',
@@ -55,7 +55,7 @@ const videos: Video[] = [
 	},
 	{
 		title: '🚀🐾NACHO THE KAT, KASPA MEME FLAGSHIP KRC-20 TOKEN ABOUT TO TAKE OFF🚀🐾',
-		thumbnail: '/img/thumbnails/uh7so-d_0o8.webp',
+		thumbnail: '/img/thumbnails/youtube/uh7so-d_0o8.webp',
 		url: 'https://www.youtube.com/watch?v=uh7so-d_0o8',
 		author: {
 			name: 'CryptoPumpz',
@@ -64,7 +64,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'Nacho the Kat - The Most Wanted KRC-20 Meme on Kaspa',
-		thumbnail: '/img/thumbnails/maW7gjcvdYM.webp',
+		thumbnail: '/img/thumbnails/youtube/maW7gjcvdYM.webp',
 		url: 'https://www.youtube.com/watch?v=maW7gjcvdYM',
 		author: {
 			name: 'Food & Crypto',
@@ -73,7 +73,7 @@ const videos: Video[] = [
 	},
 	{
 		title: 'Kaspa + Top 5 *BEST* Meme Coins Making Millionaires!',
-		thumbnail: '/img/thumbnails/spOZphKRugY.webp',
+		thumbnail: '/img/thumbnails/youtube/spOZphKRugY.webp',
 		url: 'https://www.youtube.com/watch?v=spOZphKRugY',
 		author: {
 			name: 'Crypto Galaxy',
@@ -83,7 +83,7 @@ const videos: Video[] = [
 	{
 		title:
 			'🐈‍⬛🖤 Nacho Token is On FIRE SALE! Why You Should Buy Before It Skyrockets! 🚀 #Kaspa #Nacho #krc20',
-		thumbnail: '/img/thumbnails/XYhxP8dPnIw.webp',
+		thumbnail: '/img/thumbnails/youtube/XYhxP8dPnIw.webp',
 		url: 'https://www.youtube.com/watch?v=XYhxP8dPnIw',
 		author: {
 			name: 'CryptOliver',

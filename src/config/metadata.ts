@@ -8,14 +8,14 @@ export const metadata = {
 		title: title,
 		description: description,
 		siteName: 'Nacho the Kat',
-		// Images: [
-		// 	{
-		// 		Url: `${process.env.NEXT_PUBLIC_S3_URL}/cdn-cgi/image/width=800/${process.env.NEXT_PUBLIC_CMS_URL}/assets/${seo.meta_thumbnail?.filename_disk}`,
-		// 		Width: 1200,
-		// 		Height: 630,
-		// 		Alt: seo.meta_thumbnail?.description || ''
-		// 	}
-		// ],
+		images: [
+			{
+				url: `/img/thumbnails/meta.webp`,
+				width: 1200,
+				height: 630,
+				alt: 'Nacho the Kat'
+			}
+		],
 		locale: 'en_US',
 		type: 'website'
 	},
@@ -23,10 +23,8 @@ export const metadata = {
 		card: 'summary_large_image',
 		title: 'Nacho the Kat',
 		description: description,
-		creator: '@NachoWyborski'
-		// Images: [
-		// 	`${process.env.NEXT_PUBLIC_S3_URL}/cdn-cgi/image/width=800/${process.env.NEXT_PUBLIC_CMS_URL}/assets/${seo.meta_thumbnail?.filename_disk}`
-		// ] // Must be an absolute URL
+		creator: '@NachoWyborski',
+		images: ['/img/thumbnails/meta.webp']
 	},
 	alternates: {
 		canonical: 'https://nachowyborski.xyz'
