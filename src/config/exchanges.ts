@@ -37,6 +37,14 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/coinex.svg',
 		id: 'coinex',
 		url: 'https://www.coinex.com/register?refer_code=6zrua'
+	},
+	{
+		name: 'Coinstore',
+		description:
+			'Coinstore is a world-leading crypto trading platform that focuses on emerging high-growth markets. Trusted by more than 8.1 million users in 175 countries',
+		logo: '/img/exchanges/coinstore.png',
+		id: 'coinstore',
+		url: 'https://coinstore.com/signup?invitCode=hrntWC75'
 	}
 ];
 export default exchanges;
