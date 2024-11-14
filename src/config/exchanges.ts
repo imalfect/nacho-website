@@ -48,3 +48,4 @@ const exchanges: Exchange[] = [
 	}
 ];
 export default exchanges;
+ 
