@@ -40,7 +40,7 @@ export const roadmap: RoadmapElement[] = [
 		statusIcon: <LucideConstruction />,
 		statusClassName: 'text-yellow-500',
 		description:
-			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining. Completion is expected by end of Nov 2024.'
+			'An open-source Kaspa mining pool is in development, providing a low-fee way for users to contribute to the network with high-efficiency ASIC mining. Open Beta is expected by end of Nov 2024.'
 	},
 	{
 		title: 'NACHO Listings',
