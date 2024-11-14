@@ -304,7 +304,7 @@ const contributors: Contributor[] = [
 		creator: false
 	},
 	{
-		name: 'Hazzo',
+		name: 'Hazzo99',
 		avatar: '/img/avatars/hamburger.webp',
 		role: 'Allstar Contributor',
 		socials: [
