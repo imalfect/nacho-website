@@ -302,6 +302,17 @@ const contributors: Contributor[] = [
 			{ name: 'Discord', url: 'https://discord.com/users/Caixas', icon: <SiDiscord /> }
 		],
 		creator: false
+	},
+	{
+		name: 'Hazzo',
+		avatar: '/img/avatars/hamburger.webp',
+		role: 'Allstar Contributor',
+		socials: [
+			{ name: 'Twitter', url: 'https://twitter.com/hazzo99', icon: <SiX /> },
+			{ name: 'Discord', url: 'https://discord.com/users/hamburger.kas', icon: <SiDiscord /> },
+			{ name: 'Telegram', url: 'https://t.me/hazzo99', icon: <SiTelegram /> }
+		],
+		creator: false
 	}
 ];
 export default contributors;
