@@ -37,6 +37,20 @@ const products: Product[] = [
 			'/img/products/kat-bot/kat-bot-mobile-light.webp'
 		],
 		links: [{ url: 'https://katscan.xyz', icon: <LucideGlobe /> }]
+	},
+	{
+		id: 'katgov',
+		name: 'Kat Gov',
+		description:
+			'\n' +
+			'Kat Gov is an open-source governance platform designed to empower Kaspa ecosystem projects with seamless, transparent decision-making tools. With features like proposals, voting, and treasury management, Kat Gov simplifies community governance for projects of all sizes. Whether self-hosted or through our turn-key SaaS solution, it enables efficient collaboration and accountability.',
+		background: '/img/backgrounds/confetti.svg',
+		badges: ['Governance', 'DAO'],
+		images: [
+			'/img/products/kat-gov/kat-gov-mobile-dark-1.webp',
+			'/img/products/kat-gov/kat-gov-mobile-dark-2.webp'
+		],
+		links: [{ url: 'https://katgov.xyz', icon: <LucideGlobe /> }]
 	}
 ];
 

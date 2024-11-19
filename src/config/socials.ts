@@ -48,6 +48,11 @@ const socials: Social[] = [
 		id: 'youtube',
 		url: 'https://www.youtube.com/@NachoWyborski',
 		orbit: { size: 70, duration: 22, delay: 18, radius: 350 }
+	},
+	{
+		id: 'tiktok',
+		url: 'https://www.tiktok.com/@nacho.wyborski',
+		orbit: { size: 70, duration: 30, delay: 56, radius: 450 }
 	}
 ];
 
