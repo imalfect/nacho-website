@@ -51,7 +51,7 @@ export const roadmap: RoadmapElement[] = [
 			'NACHO is tradable on the KSPR Marketplace, providing the first option for NACHO token holders. Trading will soon be available directly through Kat Bot. Discussions are ongoing with centralized exchanges to expand liquidity.'
 	},
 	{
-		title: 'Governance',
+		title: 'Kat Gov',
 		status: 'Active Development',
 		statusIcon: <LucideClock />,
 		statusClassName: 'text-yellow-500',
@@ -68,7 +68,7 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'K.A.T.',
-		status: 'Research + Planning',
+		status: 'Research + Development',
 		statusIcon: <LucideAlertTriangle />,
 		statusClassName: 'text-blue-500',
 		description:
