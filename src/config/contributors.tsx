@@ -151,12 +151,6 @@ const contributors: Contributor[] = [
 		]
 	},
 	{
-		name: 'Nick Nach-o',
-		avatar: '/img/avatars/nick-nacho.webp',
-		role: 'Allstar Contributor',
-		socials: [{ name: 'Twitter', url: 'https://twitter.com/nicknach01', icon: <SiX /> }]
-	},
-	{
 		name: 'SlightEdged',
 		avatar: '/img/avatars/slightedged.webp',
 		role: 'Moderator Team',
