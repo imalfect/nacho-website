@@ -37,7 +37,7 @@ const contributors: Contributor[] = [
 		bio: '@DrDanCrypto - 2.5 years in web 3 as community leader + 4 years of service in the marine corps under crash fire rescue + 3 years of residential electrician experience + non commissioned officer in the marinecorps trained to lead upcoming generations of Jr enlisted marines through times of uncertainty, conflict, and combat through personal development, education and physical training.'
 	},
 	{
-		name: 'Iron Frog',
+		name: 'IronFrog',
 		avatar: '/img/avatars/iron-frog.webp',
 		role: 'Creator Team',
 		socials: [
