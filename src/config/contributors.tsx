@@ -25,6 +25,30 @@ const contributors: Contributor[] = [
 		bio: "Ashton Wood brings a decade of expertise in technical recruitment, project management, and strategic team-building, with a strong focus on the Web3 and DLT space. \nPassionate about decentralization and transparency, Ashton champions community-led initiatives and drives impactful innovations that align with the Nacho Community's vision for open-source development and governance."
 	},
 	{
+		name: 'DrDan',
+		avatar: '/img/avatars/drdan.webp',
+		role: 'Creator Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/dizzy8731', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/DrDanCrypto', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/DrDanCrypto', icon: <SiTelegram /> }
+		],
+		creator: true,
+		bio: '@DrDanCrypto - 2.5 years in web 3 as community leader + 4 years of service in the marine corps under crash fire rescue + 3 years of residential electrician experience + non commissioned officer in the marinecorps trained to lead upcoming generations of Jr enlisted marines through times of uncertainty, conflict, and combat through personal development, education and physical training.'
+	},
+	{
+		name: 'Iron Frog',
+		avatar: '/img/avatars/iron-frog.webp',
+		role: 'Creator Team',
+		socials: [
+			{ name: 'Discord', url: 'https://discord.com/users/ironfrogcrypto', icon: <SiDiscord /> },
+			{ name: 'Twitter', url: 'https://twitter.com/IronFrogCrypto', icon: <SiX /> },
+			{ name: 'Telegram', url: 'https://t.me/IronFrogCrypto', icon: <SiTelegram /> }
+		],
+		creator: true,
+		bio: 'Toby Vanlandingham “Iron Frog” brings to the team over 7 years of experience in Government and Corporate relations, structure and development, federal policy, legislation and legal policy analysis and governance. A crypto enthusiast with a passion and emphasis on POW powered by renewable energy.'
+	},
+	{
 		name: 'Chris',
 		avatar: '/img/avatars/chris.webp',
 		role: 'Creator Team',
@@ -47,30 +71,6 @@ const contributors: Contributor[] = [
 		],
 		creator: true,
 		bio: 'Served with distinction in the United States Marine Corps for 3 years as a Motor Transport Operator, including 1 year as a non-commissioned officer, where they demonstrated exceptional leadership and operational expertise. In addition to their military service, they bring 2 years of experience as a community leader in the evolving Web 3 space, and 1 year of managerial experience in the construction industry. Fluent in Greek. Is recognized for their adaptability, leadership, and commitment to excellence across both military and civilian sectors.'
-	},
-	{
-		name: 'Iron Frog',
-		avatar: '/img/avatars/iron-frog.webp',
-		role: 'Creator Team',
-		socials: [
-			{ name: 'Discord', url: 'https://discord.com/users/ironfrogcrypto', icon: <SiDiscord /> },
-			{ name: 'Twitter', url: 'https://twitter.com/IronFrogCrypto', icon: <SiX /> },
-			{ name: 'Telegram', url: 'https://t.me/IronFrogCrypto', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: 'Toby Vanlandingham “Iron Frog” brings to the team over 7 years of experience in Government and Corporate relations, structure and development, federal policy, legislation and legal policy analysis and governance. A crypto enthusiast with a passion and emphasis on POW powered by renewable energy.'
-	},
-	{
-		name: 'DrDan',
-		avatar: '/img/avatars/drdan.webp',
-		role: 'Creator Team',
-		socials: [
-			{ name: 'Discord', url: 'https://discord.com/users/dizzy8731', icon: <SiDiscord /> },
-			{ name: 'Twitter', url: 'https://twitter.com/DrDanCrypto', icon: <SiX /> },
-			{ name: 'Telegram', url: 'https://t.me/DrDanCrypto', icon: <SiTelegram /> }
-		],
-		creator: true,
-		bio: '@DrDanCrypto - 2.5 years in web 3 as community leader + 4 years of service in the marine corps under crash fire rescue + 3 years of residential electrician experience + non commissioned officer in the marinecorps trained to lead upcoming generations of Jr enlisted marines through times of uncertainty, conflict, and combat through personal development, education and physical training.'
 	},
 	{
 		name: 'Pygoz',
