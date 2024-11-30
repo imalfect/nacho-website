@@ -44,7 +44,7 @@ export const roadmap: RoadmapElement[] = [
 	},
 	{
 		title: 'NACHO Listings',
-		status: 'Phase 1 Complete',
+		status: 'Phase 2 In Progress',
 		statusIcon: <LucideConstruction />,
 		statusClassName: 'text-yellow-500',
 		description:
