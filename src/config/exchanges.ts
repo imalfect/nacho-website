@@ -53,6 +53,14 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/ascendex.png',
 		id: 'ascendex',
 		url: 'https://ascendex.com/en/register?inviteCode=UQ0BAVVXS'
+	},
+	{
+		name: 'Biconomy',
+		description:
+			'Ranked among 20 Leading Exchanges by CMC and Licensed by Leading Countries. 140+ popular currencies and constant new listings',
+		logo: '/img/exchanges/biconomy.png',
+		id: 'biconomy',
+		url: 'https://www.biconomy.com/sign-up?r_user_id=W9RDQC0DI'
 	}
 ];
 export default exchanges;
