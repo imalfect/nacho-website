@@ -45,6 +45,14 @@ const exchanges: Exchange[] = [
 		logo: '/img/exchanges/coinstore.png',
 		id: 'coinstore',
 		url: 'https://coinstore.com/signup?invitCode=hrntWC75'
+	},
+	{
+		name: 'AscendEX',
+		description:
+			'AscendEX is a global cryptocurrency platform, with a comprehensive product suite, including spot, margin, and futures trading for 200+ blockchain projects.',
+		logo: '/img/exchanges/ascendex.png',
+		id: 'ascendex',
+		url: 'https://ascendex.com/en/register?inviteCode=UQ0BAVVXS'
 	}
 ];
 export default exchanges;
