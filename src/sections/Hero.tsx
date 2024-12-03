@@ -4,6 +4,8 @@ import { SectionSubtitle } from '@/components/ui/Typography/SectionTitle';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
 import { LucideChartCandlestick, LucideNotepadText, LucideScroll, LucideUsers } from 'lucide-react';
 import Link from 'next/link';
+import ProgressBar from '@/components/ui/ProgressBar';
+
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
 	const [linkButtonsScope, animateLinkButtons] = useAnimate();
@@ -22,6 +24,7 @@ export default function HeroSection() {
 			}
 		>
 			<div className={'flex flex-col gap-6'}>
+				<ProgressBar />
 				<div>
 					<LetterPullup
 						words={"Nacho the Kat, inspired by Shai Wyborski's pet cat."}
