@@ -5,26 +5,16 @@ import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
 import { LucideChartCandlestick, LucideNotepadText, LucideScroll, LucideUsers } from 'lucide-react';
 import Link from 'next/link';
 import ProgressBar from '@/components/ui/ProgressBar';
+import { motion } from 'framer-motion';
 
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
 	const [linkButtonsScope, animateLinkButtons] = useAnimate();
-	// Const { scrollY } = useScroll({
-	// 	Container: ref
-	// });
-	// Const limitedScrollY = useSpring(useTransform(scrollY, [0, 400], [0, 400]), {
-	// 	Stiffness: 100,
-	// 	Damping: 20
-	// });
+	const progressBarControls = useAnimationControls();
 
 	return (
-		<div
-			className={
-				'relative mt-12 flex min-h-screen flex-col items-center justify-between md:mt-0 md:flex-row'
-			}
-		>
-			<div className={'flex flex-col gap-6'}>
-				<ProgressBar />
+		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
+			<div className={'flex flex-col gap-4 mt-0 md:mt-0'}>
 				<div>
 					<LetterPullup
 						words={"Nacho the Kat, inspired by Shai Wyborski's pet cat."}
@@ -42,13 +32,15 @@ export default function HeroSection() {
 							opacity: 0
 						}}
 						onAnimationComplete={() => {
-							animateLinkButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) });
+							animateLinkButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) }).then(() => {
+								progressBarControls.start({ opacity: 1 });
+							});
 						}}
 					>
 						The first fair-launched memecoin on Kaspa.
 					</SectionSubtitle>
 				</div>
-				<div className={'flex flex-wrap gap-6'} ref={linkButtonsScope}>
+				<div className={'flex flex-wrap gap-6 mb-10'} ref={linkButtonsScope}>
 					<Link href={'/Nacho_the_kat_Whitepaper_240605.pdf'} target={'_blank'}>
 						<PartButton active={false} icon={<LucideScroll />} onClick={() => {}} className={'opacity-0'}>
 							Whitepaper
@@ -80,10 +72,10 @@ export default function HeroSection() {
 						</PartButton>
 					</Link>
 				</div>
+				<motion.div className={'mt-40'} initial={{ opacity: 0 }} animate={progressBarControls}>
+					<ProgressBar />
+				</motion.div>
 			</div>
-			{/*<div>*/}
-			{/*	<NewFallingCoin />*/}
-			{/*</div>*/}
 		</div>
 	);
 }
