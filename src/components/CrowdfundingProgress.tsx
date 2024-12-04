@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { useAnimate } from 'framer-motion';
 import { PartButton } from '@/components/ui/Buttons/PartButton';
 import { LucideCoins } from 'lucide-react';
+import DonateDialog from '@/components/Dialogs/DonateDialog';
 
 export default function CrowdfundingProgress(props: { campaign: CrowdfundingCampaign }) {
 	const nachoPrice = useTokenPrice('nacho-the-kat');
@@ -34,6 +35,7 @@ export default function CrowdfundingProgress(props: { campaign: CrowdfundingCamp
 	);
 
 	const [progressScope, animateProgress] = useAnimate();
+	const [showDonateDialog, setShowDonateDialog] = useState(false);
 
 	useEffect(() => {
 		setNachoValue(calculateTokenValue(shiftDecimals(adjustedValues.nacho, -8, 2), nachoPrice));
@@ -69,12 +71,13 @@ export default function CrowdfundingProgress(props: { campaign: CrowdfundingCamp
 			<div className={'mb-10 flex flex-wrap gap-6'}>
 				<PartButton
 					className={'donate-button opacity-0 inline-block'}
-					onClick={() => {}}
+					onClick={() => setShowDonateDialog(true)}
 					icon={<LucideCoins />}
 				>
 					Donate
 				</PartButton>
 			</div>
+			<DonateDialog show={showDonateDialog} onClose={() => setShowDonateDialog(false)} />
 		</div>
 	);
 }

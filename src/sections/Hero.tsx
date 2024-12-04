@@ -11,8 +11,7 @@ import { useRef } from 'react';
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
 	const [linkButtonsScope, animateLinkButtons] = useAnimate();
-	const progressBarRef = useRef(null);
-	const [progressBarScope, animateProgressBar] = useAnimate();
+	const progressBarRef = useRef<HTMLDivElement | null>(null);
 
 	return (
 		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
@@ -36,7 +35,7 @@ export default function HeroSection() {
 						onAnimationComplete={() => {
 							animateLinkButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) }).then(() => {
 								if (progressBarRef.current) {
-									animateProgressBar(progressBarRef.current, { opacity: 1 }, { delay: 0.3 });
+									progressBarRef.current.style.opacity = '1';
 								}
 							});
 						}}
