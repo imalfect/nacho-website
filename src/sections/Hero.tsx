@@ -6,10 +6,13 @@ import crowdfunding from '@/config/crowdfunding';
 import { stagger, useAnimate, useAnimationControls } from 'framer-motion';
 import { LucideChartCandlestick, LucideNotepadText, LucideScroll, LucideUsers } from 'lucide-react';
 import Link from 'next/link';
+import { useRef } from 'react';
+
 export default function HeroSection() {
 	const taglineControls = useAnimationControls();
 	const [linkButtonsScope, animateLinkButtons] = useAnimate();
-	const progressBarControls = useAnimationControls();
+	const progressBarRef = useRef(null);
+	const [progressBarScope, animateProgressBar] = useAnimate();
 
 	return (
 		<div className={'relative flex min-h-screen flex-col items-center justify-start md:flex-row'}>
@@ -32,7 +35,9 @@ export default function HeroSection() {
 						}}
 						onAnimationComplete={() => {
 							animateLinkButtons('.part-button', { opacity: 1 }, { delay: stagger(0.3) }).then(() => {
-								progressBarControls.start({ opacity: 1 });
+								if (progressBarRef.current) {
+									animateProgressBar(progressBarRef.current, { opacity: 1 }, { delay: 0.3 });
+								}
 							});
 						}}
 					>
@@ -72,7 +77,9 @@ export default function HeroSection() {
 					</Link>
 				</div>
 				{crowdfunding.active && crowdfunding.campaign && (
-					<CrowdfundingProgress campaign={crowdfunding.campaign} />
+					<div className={'mt-32 progress-section opacity-0'} ref={progressBarRef}>
+						<CrowdfundingProgress campaign={crowdfunding.campaign} />
+					</div>
 				)}
 			</div>
 		</div>
