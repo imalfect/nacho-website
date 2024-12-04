@@ -17,14 +17,14 @@ import {
   
     return (
       <Dialog open={show} onOpenChange={onClose}>
-        <DialogContent className="max-w-full sm:max-w-md mx-auto">
+        <DialogContent className="w-full max-w-md mx-auto p-4 overflow-hidden">
           <DialogHeader>
             <DialogTitle>Donate</DialogTitle>
           </DialogHeader>
           <div className="flex flex-col items-center space-y-6 text-center">
             <p className="mt-3 text-lg font-bold">Send only $KAS or $NACHO to this address</p>
             <QRCode value={donateAddress} size={250} className="qr-code-image" />
-            <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="address-text">
+            <a href={donateUrl} target="_blank" rel="noopener noreferrer" className="address-text break-all">
               {donateAddress}
             </a>
             <PartButton onClick={handleCopyAddress} icon={null}>
