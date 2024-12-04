@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import LetterPullup from '@/components/ui/letter-pullup';
+import fetchBalances from '../../utils/fetchBalances';
 
 const ProgressBarWrapper = styled.div`
   display: flex;
@@ -40,18 +41,27 @@ const GoalText = styled(motion.div)`
 `;
 
 const ProgressBar = () => {
-  const [progress, setProgress] = useState<number | null>(null);
-  const [currentAmount, setCurrentAmount] = useState<number>(0);
+  const [nachoUSDValue, setNachoUSDValue] = useState<number | null>(null);
+  const [kasUSDValue, setKasUSDValue] = useState<number | null>(null);
+  const [progress, setProgress] = useState<number>(0);
 
   useEffect(() => {
-    const fetchProgress = async () => {
-      const data = { amount: 25000 };
-      const progressPercentage = (data.amount / 50000) * 100;
-      setProgress(progressPercentage);
-      setCurrentAmount(data.amount);
+    const fetchAndSetBalances = async () => {
+      try {
+        const { nachoUSDValue, kasUSDValue } = await fetchBalances();
+        setNachoUSDValue(nachoUSDValue);
+        setKasUSDValue(kasUSDValue);
+
+        const totalUSDValue = (nachoUSDValue ?? 0) + (kasUSDValue ?? 0);
+        const adjustedValue = totalUSDValue - 40000; // Subtract $40,000
+        const progressPercentage = Math.max((adjustedValue / 50000) * 100, 0); // Ensure non-negative progress
+        setProgress(progressPercentage);
+      } catch (error) {
+        console.error('Error fetching balances:', error);
+      }
     };
 
-    fetchProgress();
+    fetchAndSetBalances();
   }, []);
 
   return (
@@ -62,12 +72,10 @@ const ProgressBar = () => {
         className="text-4xl md:text-5xl"
       />
       <ProgressBarContainer>
-        {progress !== null && (
-          <Progress progress={progress} />
-        )}
+        <Progress progress={progress} />
       </ProgressBarContainer>
       <GoalText>
-        Raised: ${currentAmount.toLocaleString()} / Goal: $50,000
+        Raised: ${(nachoUSDValue ?? 0).toLocaleString()} NACHO / ${(kasUSDValue ?? 0).toLocaleString()} KAS
       </GoalText>
     </ProgressBarWrapper>
   );
