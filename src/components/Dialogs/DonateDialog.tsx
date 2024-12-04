@@ -17,7 +17,7 @@ import {
   
     return (
       <Dialog open={show} onOpenChange={onClose}>
-        <DialogContent>
+        <DialogContent className="max-w-full sm:max-w-md mx-auto">
           <DialogHeader>
             <DialogTitle>Donate</DialogTitle>
           </DialogHeader>
