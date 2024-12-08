@@ -10,8 +10,8 @@ const crowdfunding: {
 		goal: 50000,
 		address: 'kaspa:qzrsq2mfj9sf7uye3u5q7juejzlr0axk5jz9fpg4vqe76erdyvxxze84k9nk7',
 		adjustment: {
-			kas: '484759202613',
-			nacho: '23680377857895573'
+			kas: '0',
+			nacho: '12087910057895573'
 		}
 	}
 };
