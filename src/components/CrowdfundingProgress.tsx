@@ -60,7 +60,7 @@ export default function CrowdfundingProgress(props: { campaign: CrowdfundingCamp
 			<h2 className={'text-3xl font-bold progress-title opacity-0'}>{props.campaign.title}</h2>
 			<div className={'progress-bar opacity-0'}>
 				<Progress
-					value={(totalRaisedUSD / props.campaign.goal) * 100}
+					value={Math.min((totalRaisedUSD / props.campaign.goal) * 100, 100)}
 					className={'max-w-[48rem]'}
 				/>
 			</div>
