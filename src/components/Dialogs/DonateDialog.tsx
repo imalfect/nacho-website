@@ -1,5 +1,6 @@
-import { PartButton } from '@/components/ui/Buttons/PartButton';
+import { MediumButton } from '@/components/ui/Buttons/MediumButton';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { LucideClipboardCopy } from 'lucide-react';
 import QRCode from 'react-qr-code';
 
 export default function DonateDialog({ show, onClose }: { show: boolean; onClose: () => void }) {
@@ -27,9 +28,9 @@ export default function DonateDialog({ show, onClose }: { show: boolean; onClose
 					>
 						{donateAddress}
 					</a>
-					<PartButton onClick={handleCopyAddress} icon={null}>
-						Copy address
-					</PartButton>
+					<MediumButton onClick={handleCopyAddress}>
+						<LucideClipboardCopy /> Copy address
+					</MediumButton>
 				</div>
 			</DialogContent>
 		</Dialog>
