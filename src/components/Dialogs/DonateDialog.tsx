@@ -1,38 +1,67 @@
 import { MediumButton } from '@/components/ui/Buttons/MediumButton';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from '@/components/ui/drawer';
 import { LucideClipboardCopy } from 'lucide-react';
 import QRCode from 'react-qr-code';
+import { useMediaQuery } from 'usehooks-ts';
 
 export default function DonateDialog({ show, onClose }: { show: boolean; onClose: () => void }) {
 	const donateAddress = 'kaspa:qzrsq2mfj9sf7uye3u5q7juejzlr0axk5jz9fpg4vqe76erdyvxxze84k9nk7';
 	const donateUrl = `https://kas.fyi/address/${donateAddress}`;
+	const isDesktop = useMediaQuery('(min-width: 768px)');
 
 	const handleCopyAddress = () => {
 		navigator.clipboard.writeText(donateAddress);
 	};
-
-	return (
-		<Dialog open={show} onOpenChange={onClose}>
-			<DialogContent className="max-w-md p-4">
-				<DialogHeader>
-					<DialogTitle>Donate</DialogTitle>
-				</DialogHeader>
-				<div className="flex flex-col items-center space-y-6 text-center">
-					<p className="mt-3 text-lg font-bold">Send only $KAS or $NACHO to this address</p>
-					<QRCode value={donateAddress} size={250} fgColor={'#fff'} bgColor={'#00000000'} />
-					<a
-						href={donateUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="address-text break-all font-mono"
-					>
-						{donateAddress}
-					</a>
-					<MediumButton onClick={handleCopyAddress}>
-						<LucideClipboardCopy /> Copy address
-					</MediumButton>
-				</div>
-			</DialogContent>
-		</Dialog>
-	);
+	if (isDesktop) {
+		return (
+			<Dialog open={show} onOpenChange={onClose}>
+				<DialogContent className="max-w-md p-4">
+					<DialogHeader>
+						<DialogTitle>Donate</DialogTitle>
+					</DialogHeader>
+					<div className="flex flex-col items-center space-y-6 text-center">
+						<p className="mt-3 text-lg font-bold">Send only $KAS or $NACHO to this address</p>
+						<QRCode value={donateAddress} size={250} fgColor={'#fff'} bgColor={'#00000000'} />
+						<a
+							href={donateUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="address-text break-all font-mono"
+						>
+							{donateAddress}
+						</a>
+						<MediumButton onClick={handleCopyAddress}>
+							<LucideClipboardCopy /> Copy address
+						</MediumButton>
+					</div>
+				</DialogContent>
+			</Dialog>
+		);
+	} else {
+		return (
+			<Drawer open={show} onOpenChange={onClose}>
+				<DrawerContent className="p-4">
+					<DrawerHeader>
+						<DrawerTitle>Donate</DrawerTitle>
+					</DrawerHeader>
+					<div className="flex flex-col items-center space-y-6 text-center">
+						<p className="mt-3 text-lg font-bold">Send only $KAS or $NACHO to this address</p>
+						<QRCode value={donateAddress} size={250} fgColor={'#fff'} bgColor={'#00000000'} />
+						<a
+							href={donateUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="address-text break-all font-mono"
+						>
+							{donateAddress}
+						</a>
+						<MediumButton onClick={handleCopyAddress}>
+							<LucideClipboardCopy /> Copy address
+						</MediumButton>
+					</div>
+				</DrawerContent>
+			</Drawer>
+		);
+	}
 }
