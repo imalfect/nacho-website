@@ -13,13 +13,13 @@ export default function DonateDialog({ show, onClose }: { show: boolean; onClose
 
 	return (
 		<Dialog open={show} onOpenChange={onClose}>
-			<DialogContent className="mx-auto w-full max-w-md overflow-hidden p-4">
+			<DialogContent className="max-w-md p-4">
 				<DialogHeader>
 					<DialogTitle>Donate</DialogTitle>
 				</DialogHeader>
 				<div className="flex flex-col items-center space-y-6 text-center">
 					<p className="mt-3 text-lg font-bold">Send only $KAS or $NACHO to this address</p>
-					<QRCode value={donateAddress} size={250} className="qr-code-image" />
+					<QRCode value={donateAddress} size={250} fgColor={'#fff'} bgColor={'#00000000'} />
 					<a
 						href={donateUrl}
 						target="_blank"
