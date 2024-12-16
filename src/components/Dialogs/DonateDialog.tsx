@@ -23,7 +23,7 @@ export default function DonateDialog({ show, onClose }: { show: boolean; onClose
 						href={donateUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="address-text break-all"
+						className="address-text break-all font-mono"
 					>
 						{donateAddress}
 					</a>
